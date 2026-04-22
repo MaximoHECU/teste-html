@@ -16,3 +16,14 @@ function contarVogais(frase){
 
     console.log("Quantidade de vogais: " + qtd);
 }
+
+function ehPalindromo(frase){
+    frase = frase.toLowerCase("");
+    const inverso = frase.split("").reverse().join("");
+
+    if (frase == inverso){
+        return true;
+    } else {
+        return false
+    }
+}
